@@ -1,46 +1,25 @@
-var lnStickyNavigation;
+let scrolldownPositionY;
 
-$(document).ready(function()
-{
+document.addEventListener("DOMContentLoaded", e => {
 	applyStickyNavigation();
 	applyResize();
 });
 
-/* NAVIGATION FUNCTIONS */
-
 function applyStickyNavigation()
 {
-	lnStickyNavigation = $('.scroll-down').offset().top + 20;
-
-	$(window).on('scroll', function()
-	{
-		stickyNavigation();
-	});
-
+	scrolldownPositionY = document.querySelector(".scroll-down").offsetTop + 20;
+	document.onscroll = () => stickyNavigation();
 	stickyNavigation();
 }
 
 function stickyNavigation()
 {
-	if($(window).scrollTop() > lnStickyNavigation)
-	{
-		$('body').addClass('fixed');
-	}
-	else
-	{
-		$('body').removeClass('fixed');
-	}
+	let body = document.querySelector("body");
+	window.scrollY > scrolldownPositionY ? body.classList.add("fixed") :
+	body.classList.remove("fixed")
 }
-
-
-/* RESIZE FUNCTION */
 
 function applyResize()
 {
-	$(window).on('resize', function()
-	{
-		lnStickyNavigation = $('.scroll-down').offset().top + 20;
-
-		$('.jumbotron').css({ height: ($(window).height()) +'px' });
-	});
+	window.onresize = () => scrolldownPositionY = document.querySelector(".scroll-down").offsetTop + 20;
 }

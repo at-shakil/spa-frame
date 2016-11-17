@@ -1,0 +1,87 @@
+/*** uncss> filename: style.css ***/
+html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
+body { background: #F3EFE0; font-size: 15px; line-height: 1.64; }
+
+h2 { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px; }
+h2 { font-weight: 300; color: #22A39F; }
+h2 { font-size: 54px; text-align: center; }
+
+.jumbotron {
+	background: no-repeat center right fixed;
+
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
+
+.navbar  { border: 0px; background-color: #222222; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
+.navbar .navbar-collapse { padding: 0px; max-height: none; }
+.navbar .navbar-nav { float: none; }
+.navbar-nav { margin: 0px; }
+.navbar .nav > li { display: block; float: none; height: 80px; }
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
+
+.fixed .navbar  { position: fixed; top: 60px; }
+
+.background-white { background: #FFFFFF; }
+.background-gray { background: #434242; }
+.container { max-width: 1280px; padding: 40px 180px; }
+
+/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
+
+#contact { padding-bottom: 200px; }
+#contact h2 { color: #FFFFFF; }
+
+@media (max-width: 767px) {
+	.jumbotron:before {
+		bottom: 100px;
+		left: 20px;
+		right: 20px;
+		top: 20px;
+	}
+	.jumbotron .scroll-down { width: 100%; right: 0px; }
+
+	.navbar  { left: 0px; width: 100%; }
+	.navbar .nav > li { height: 60px; }
+	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+
+	.fixed .navbar { top: 0px; }
+
+	.container { padding: 60px 20px; min-width: 280px; }
+
+	#contact { padding-bottom: 60px; }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 767px)  {
+    .jumbotron {
+      -webkit-background-size: auto 150%;
+      background-attachment: scroll;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 767px)  {
+
+    .jumbotron {
+      -webkit-background-size: 150% auto;
+      background-attachment: scroll;
+    }
+}
+
+
+/*---------------*/
+/***** EFFECT *****/
+/*---------------*/
+

@@ -1,10 +1,6 @@
-/*** uncss> filename: style.css ***/
-html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
-body { background: #F3EFE0; font-size: 15px; line-height: 1.64; }
-
-h2 { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px; }
-h2 { font-weight: 300; color: #22A39F; }
-h2 { font-size: 54px; text-align: center; }
+body {
+	background-color: #ddd;
+}
 
 .jumbotron {
 	background: no-repeat center right fixed;
@@ -21,6 +17,8 @@ h2 { font-size: 54px; text-align: center; }
 
 	margin-bottom: 0px;
 	padding: 0px;
+
+
 }
 .jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
 
@@ -41,10 +39,16 @@ h2 { font-size: 54px; text-align: center; }
 .background-gray { background: #434242; }
 .container { max-width: 1280px; padding: 40px 180px; }
 
-/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
 
-#contact { padding-bottom: 200px; }
-#contact h2 { color: #FFFFFF; }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
 	.jumbotron:before {
@@ -79,9 +83,3 @@ h2 { font-size: 54px; text-align: center; }
       background-attachment: scroll;
     }
 }
-
-
-/*---------------*/
-/***** EFFECT *****/
-/*---------------*/
-
